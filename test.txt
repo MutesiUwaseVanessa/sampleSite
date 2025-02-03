@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body class="m-0 px-0 py-0 w-[100%] h-auto bg-slate-600">
+    <section id="home" class="w-[100%] bg-slate-400 h-auto">
+        <div class="w-[100%] h-13 bg-[#988B7B] justify-between items--center pl-[2%] pr-[2%] flex py-3 gap-4 ">
+            <div class="hidden w-[48%] flex-col justify-between gap-3 bg-slate-400">
+                <div class="flex items-center gap-2">
+                    <img src="Images/mail.png" alt="mailIcon" class="w-6">
+                    <p class="text-white text-xs font-medium">admissions@umst-edu.rw</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="Images/phone.png" alt="phoneIcon" class="w-4">
+                    <p class="text-white text-sm font-medium">+29442215552</p>
+                </div>
+            </div>
+            <div class="w-[100%] flex justify-between items-center bg-slate-500">
+                <p class="text-white text-xs font-medium">FAQ's</p>
+                <a href="#contantUs" class="text-white font-medium text-xs decoration-0;">Contact Us</a>
+                <div class="flex items-center justify-between gap-3 bg-red-300">
+                    <button
+                        class="border-[1px] border-white rounded-[5px] py-1 px-4 bg-none text-white text-sm font-medium border-solid ">Log
+                        In</button>
+                    <button class="border-none rounded-[5px] py-[5px] px-[12px] bg-[#F03023] text-white text-sm">Apply
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full bg-lime-300 py-4 px-2 relative">
+            <div class="flex items-center justify-between gap-[10%] bg-slate-400">
+
+                <div class="h-7 w-[25%]">
+                    <img src="Images/Logo.png" alt="Logo" class=" h-[100%] w-full">
+                </div>
+    
+                <div class="hidden md:flex w-[77%] items-center bg-cyan-400">
+                    <ul class="flex w-full list-none gap-4">
+                        <li><a href="#home" class="text-black text-[16px] font-medium hover:text-[#F03023]">Home</a></li>
+                        <li><a href="#faculties" class="text-black text-[16px] font-medium hover:text-[#F03023]">Faculties</a></li>
+                        <li><a href="#admissions" class="text-black text-[16px] font-medium hover:text-[#F03023]">Admissions</a></li>
+                        <li><a href="#" class="text-black text-[16px] font-medium hover:text-[#F03023]">Library</a></li>
+                        <li><a href="#" class="text-black text-[16px] font-medium hover:text-[#F03023]">Research</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex items-center gap-4 bg-slate-500 w-[70%]">
+                    <input type="search" name="search" id="search"
+                        class="w-[80%] py-1 px-4 border-none text-sm bg-[#ebedee] rounded-md"
+                        style="background-image: url('Images/searchIcon.png'); background-repeat: no-repeat; background-position: 95%; background-size: 16px;"
+                        placeholder="Search here..">
+                    
+                    <div id="burgerMenu" class="h-auto w-9 cursor-pointer md:hidden">
+                        <img src="Images/burgerMenu.png" alt="burgerMenu" class="w-full">
+                    </div>
+                </div>
+            </div>
+    
+            <div id="mobileMenu" class="hidden absolute top-full right-0 w-[40%]  py-2 px-4 shadow-lg z-50 ">
+                <ul class="flex flex-col">
+                    <li><a href="#home" class="block text-white text-[16px] font-medium hover:text-[#F03023]">Home</a></li>
+                    <li><a href="#faculties" class="block text-white text-[16px] font-medium hover:text-[#F03023]">Faculties</a></li>
+                    <li><a href="#admissions" class="block text-white text-[16px] font-medium hover:text-[#F03023]">Admissions</a></li>
+                    <li><a href="#" class="block text-white text-[16px] font-medium hover:text-[#F03023]">Library</a></li>
+                    <li><a href="#" class="block text-white text-[16px] font-medium hover:text-[#F03023]">Research</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            const burgerMenu = document.getElementById("burgerMenu");
+            const mobileMenu = document.getElementById("mobileMenu");
+    
+            burgerMenu.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        </script>
+
+        <div class="relative h-auto w-full bg-cover bg-[position:0_-50] bg-no-repeat flex flex-col pt-[35px] pb-3"
+            style="background-image: url('/Images/microscope.jpeg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <div class="ml-[2%] flex flex-col w-auto gap-2 h-auto relative z-10">
+                <p class="text-white text-xs font-medium m-0 leading-tight">Welcome to UMST University - Rwanda
+                </p>
+                <p class="text-white text-sm font-bold m-0 leading-tight">Building tomorrow’s <br> leaders today</p>
+                <p class="text-white text-[7px] m-0 leading-tight">UMST University excels in health sciences and social
+                    responsibility, shaping innovative
+                    <br> professionals in medicine, dentistry, pharmacy, and public health.
+                </p>
+                <a href=""
+                    class="w-auto rounded-[5px] cursor-pointer decoration-none hover:bg-white hover:text-[#F03023]">
+                    <button class="group flex items-center border-none bg-[#F03023] 
+                    w-auto text-white text-[12px] py-[6px] px-[3%] gap-[10px] 
+                    cursor-pointer rounded-[5px] hover:bg-white hover:text-[#F03023] m-0">
+                        Explore Our Programs
+                        <img src="Images/arrowIcon.png" alt="arrowIcon"
+                            class="w-[15px] h-[15px] group-hover:filter group-hover:brightness-[90%] group-hover:invert-[22%] group-hover:sepia-[96%] group-hover:saturate-[48%] group-hover:contrast-[98%]">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculties" class="bg-cyan-200 w-full">
+        <div class="w-[100%] h-[230px] flex items-center border-b-[#988B7B] shadow-custom bg-purple-400">
+          
+            <a href="#" class="decoration-0 text-inherit block w-[33.3%] h-full bg-slate-400">
+                <div class="flex flex-col justify-center items-center w-[93%] py-[45px] gap-[15px]  
+                cursor-pointer transition-transform duration-200 ease-in-out transform hover:transform scale-105">
+                    <div class="w-[50px] h-[50px] bg-[#988B7B] flex items-center justify-center rounded-[50%]">
+                        <img src="Images/underGrad.png" alt="undergrad" class="undergradIcon">
+                    </div>
+                    <p class="text-xs font-bold">Undergraduate</p>
+                    <p class="text-center text-[8px]">Adipiscing turpis nullam lacinia mi pretium <br> cras sollicitudin quam
+                        facilisi</p>
+                </div>
+            </a>
+
+            <a href="#" class="bg-[#988B7B] decoration-0 text-inherit block w-[33.3%] h-full ">
+                <div class="flex flex-col justify-center items-center w-[93%] py-[45px] gap-[15px]  
+                cursor-pointer transition-transform duration-200 ease-in-out transform hover:transform scale-105">
+                    <div class="w-[50px] h-[50px] bg-white flex items-center justify-center rounded-[50%]">
+                        <img src="Images/grad.png" alt="undergrad" class="undergradIcon">
+                    </div>
+                    <p class="text-xs font-bold">Graduate</p>
+                    <p class="text-center text-[8px]">Adipiscing turpis nullam lacinia mi pretium cras sollicitudin quam <br>
+                        facilisi</p>
+                </div>
+            </a>
+
+            <!-- <a href="#" class="decoration-0 text-inherit block w-[33.3%] h-full">
+                <div class="flex flex-col bg-[#988B7B] justify-center items-center w-[93%] py-[30px] gap-[15px]  
+                cursor-pointer transition-transform duration-200 ease-in-out transform hover:transform scale-105">
+                    <div class="w-[50px] h-[50px] bg-white flex items-center justify-center rounded-[50%]">
+                        <img src="Images/grad.png" alt="grad" class="gradIcon">
+                    </div>
+                    <p class="text-xs font-bold text-white">Graduate</p>
+                    <p class="text-center text-[8px] text-white">Adipiscing turpis nullam lacinia mi pretium cras sollicitudin quam <br>
+                        facilisi</p>
+                </div>
+            </a> -->
+
+            <a href="#" class="decoration-0 text-inherit block w-[33.3%] h-full bg-slate-400">
+                <div class="flex flex-col justify-center items-center w-[93%] py-[45px] gap-[15px]  
+                cursor-pointer transition-transform duration-200 ease-in-out transform hover:transform scale-105">
+                    <div class="w-[50px] h-[50px] bg-[#988B7B] flex items-center justify-center rounded-[50%]">
+                        <img src="Images/profesh.png" alt="profesh" class="profeshIcon">
+                    </div>
+                    <p class="text-xs font-bold text-center">Professional Programs</p>
+                    <p class="text-center text-[8px]">Adipiscing turpis nullam lacinia mi pretium <br> cras sollicitudin quam
+                        facilisi</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div style="height: 70px; width: 100%; "></div>
+
+        <div class="programs">
+            <div class="explore">
+                <p class="exploreTitle">Explore Our Programs</p>
+                <img src="Images/curveIcon.png" alt="curveIcon" class="curveIcon">
+            </div>
+
+            <div class="facultyPrograms">
+                <a href="medicine.html" class="program-link">
+                    <div class="discussion">
+                        <div class="discoImageDiv">
+                            <img src="Images/discussion.jpeg" alt="discussion" class="discoImg">
+                            <div class="details">
+                                <p class="discoTitle">Faculty of Medicine</p>
+                                <p class="discoDetails">Our comprehensive medical program provides students with a solid
+                                    foundation in clinical skills, research, and medical ethics.</p>
+                            </div>
+                        </div>
+                        <div class="apply">
+                            <div class="period">
+                                <img src="Images/clock.png" alt="clock" class="clockIcon">
+                                <p class="periodText">4 Years</p>
+                            </div>
+                            <div class="credits">
+                                <img src="Images/credits.png" alt="credits" class="creditsIcon">
+                                <p class="creditsText">8 credit</p>
+                            </div>
+                            <button class="ApplyBtn">Apply Now</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="dentistry.html" class="program-link">
+                    <div class="discussion">
+                        <div class="discoImageDiv">
+                            <img src="Images/surgery.jpeg" alt="discussion" class="discoImg">
+                            <div class="details">
+                                <p class="discoTitle">Faculty of Dentistry</p>
+                                <p class="discoDetails">The Faculty of Dentistry offers world-class training, enabling
+                                    students to become skilled professionals who excel in dental care and oral health.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apply">
+                            <div class="period">
+                                <img src="Images/clock.png" alt="clock" class="clockIcon">
+                                <p class="periodText">4 Years</p>
+                            </div>
+                            <div class="credits">
+                                <img src="Images/credits.png" alt="credits" class="creditsIcon">
+                                <p class="creditsText">8 credit</p>
+                            </div>
+                            <button class="ApplyBtn">Apply Now</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="postgraduate.html" class="program-link">
+                    <div class="discussion">
+                        <div class="discoImageDiv">
+                            <img src="Images/consultation.jpeg" alt="discussion" class="discoImg">
+                            <div class="details">
+                                <p class="discoTitle">Postgraduate Programs</p>
+                                <p class="discoDetails">Explore our specialized programs in medical research and
+                                    healthcare management designed for professionals looking to advance their careers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="apply">
+                            <div class="period">
+                                <img src="Images/clock.png" alt="clock" class="clockIcon">
+                                <p class="periodText">4 Years</p>
+                            </div>
+                            <div class="credits">
+                                <img src="Images/credits.png" alt="credits" class="creditsIcon">
+                                <p class="creditsText">8 credit</p>
+                            </div>
+                            <button class="ApplyBtn">Explore</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 100px; width: 100%; "></div>
+
+    <!-- <section id="admissions">
+        <div class="background2">
+            <div class="content2">
+                <div class="bg2content">
+                    <div class="playBtnDiv">
+                        <img src="Images/playBtn.png" alt="playButton" class="playBtnImg">
+                    </div>
+                    <p class="applyText">Admissions Are Open - Start <br> Your Journey</p>
+                    <a href="apply.html" style="text-decoration: none;">
+                        <button class="admissionsApply">Apply Now
+                            <img src="Images/arrowIcon.png" alt="arrowIcon" class="arrowIcon">
+                        </button>
+                    </a>
+                </div>
+                <div class="bg2content2">
+                    <a href="apply.html" class="content2Link">
+                        <div class="content2Box">
+                            <p class="content2Title">Apply Now</p>
+                            <p class="content2Details">Take the first step towards a fulfilling academic career <br> at
+                                UMST.</p>
+                        </div>
+                    </a>
+                    <a href="requirements.html" class="content2Link">
+                        <div class="content2Box">
+                            <p class="content2Title">Admission Requirements</p>
+                            <p class="content2Details">Review the criteria for both undergraduate and <br> graduate
+                                programs
+                                here.</p>
+                        </div>
+                    </a>
+                    <a href="scholarships.html" class="content2Link">
+                        <div class="content2Box">
+                            <p class="content2Title">Scholarships & Financial Aid</p>
+                            <p class="content2Details">Learn about the financial assistance options available <br> to
+                                help
+                                you achieve your academic goals.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div style="height: 93px; width: 100%; "></div>
+
+    <section id="contantUs">
+        <div class="bottom">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5900428619643!2d30.08771617384992!3d-1.9149873980676002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca1007996838b%3A0x900b23eebcf5e32a!2sUniversity%20Of%20Medical%20Sciences%20%26%20Technology%20UMST!5e0!3m2!1sen!2srw!4v1738140929599!5m2!1sen!2srw"
+                width="50%" height="610" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" frameborder="0" class="map">
+            </iframe>
+
+            <div class="contactInfoDiv">
+                <p class="getInTouch">Get In Touch</p>
+                <p class="contactInfoTitle">
+                    <span class="contactTitle">Contact</span>
+                    <span class="infoTitle">Information</span>
+                </p>
+
+                <div class="contactInfoSubDiv">
+                    <div class="subDiv1">
+                        <img src="Images/Logo.png" alt="logo" class="logoFooter">
+
+                        <div class="infoText">
+                            <div class="footerLocation">
+                                <img src="Images/locationIcon.png" alt="locationPin" class="footerIcon">
+                                <a class="locationDetails" href="https://maps.app.goo.gl/ao9dQ2txFtB9NjLu8">
+                                    Rwanda - <br> 24VR+CJC, KK 56 St, Kigali, Rwanda</a>
+                            </div>
+
+                            <div class="infoText">
+                                <div class="footerLocation">
+                                    <img src="Images/phoneIcon.png" alt="phoneIcon" class="footerIcon">
+                                    <a class="locationDetails" href="tel: +29442215552">
+                                        +29442215552</a>
+                                </div>
+                            </div>
+
+                            <div class="infoText">
+                                <div class="footerLocation">
+                                    <img src="Images/mailFooterIcon.png" alt="locationPin" class="footerIcon">
+                                    <a class="locationDetails" href="admissions@umst-edu.rw">
+                                        admissions@umst-edu.rw</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subDiv2">
+                        <form action="" class="submitSuggestion">
+                            <input type="text" class="input1" placeholder="First Name">
+                            <input type="email" class="input2" placeholder="Email">
+                            <input type="number" class="input3" placeholder="Phone">
+                            <textarea name="" id="" class="textarea"></textarea>
+                            <input type="submit" value="SUBMIT" class="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="copyright">
+            <p class="copyrightText">© Copyrighted 2024 UMST</p>
+        </div>
+        <div class="termsAndCondtions">
+            <p class="termsAndCondtionsText">Privacy Policy | Terms and Condition</p>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <a href="#" class="decoration-0 text-inherit block w-[33.3%] h-full">
+                <div class="flex flex-col bg-[#988B7B] justify-center items-center w-[93%] py-[30px] gap-[15px]  
+                cursor-pointer transition-transform duration-200 ease-in-out transform hover:transform scale-105">
+                    <div class="w-[50px] h-[50px] bg-white flex items-center justify-center rounded-[50%]">
+                        <img src="Images/grad.png" alt="grad" class="gradIcon">
+                    </div>
+                    <p class="text-xs font-bold text-white">Graduate</p>
+                    <p class="text-center text-[8px] text-white">Adipiscing turpis nullam lacinia mi pretium cras sollicitudin quam <br>
+                        facilisi</p>
+                </div>
+            </a> -->
