@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./Home.html"],
+  content: ["./*.html", "./src/**/*.{js,ts,jsx,tsx}"], // Scan all HTML and JS/TS files
   theme: {
     extend: {
       boxShadow: {
@@ -26,4 +26,5 @@ module.exports = {
   },
   plugins: [],
 }
+
 
